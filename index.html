@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eleinsita</title>
+</head>
+
+<body>
+    <div>
+        <span id="btn" class="boton" onclick="hora()"> Presiona</span>
+    </div>
+    <link rel="stylesheet" href="estilos.css">
+</body>
+<script>
+    function hora() {
+        window.setInterval(
+            function() {
+                var d = new Date();
+                var hour = d.getHours() + ':' + ('0' + d.getMinutes()).slice(-2)
+                let hoursActive = ['12:00', '12:01', '12:02', '12:03', '12:04', '12:05', '12:06', '12:07', '12:08', '12:09', '12:10', '12:11', '12:12', '12:13', '12:14', '12:15']
+
+                if (hoursActive.includes(hour)) {
+                    alert("Ya es la hora!")
+                    location.href = "https://www.notion.so/100-canciones-b7b812d376a54381a58e60daf02ffc65";
+                } else {
+                    alert("Aun no es la hora")
+                    location.href = "";
+                }
+            }, 2000);
+    }
+
+    function hora_mala() {
+        location.href = "https://www.facebook.com/notyour.sugarlicious"
+    }
+</script>
