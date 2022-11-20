@@ -20,13 +20,13 @@
             function() {
                 var d = new Date();
                 var hour = d.getHours() + ':' + ('0' + d.getMinutes()).slice(-2)
-                let hoursActive = ['12:38','12:39']
+                let hoursActive = ['12:38','12:39','12:40','12:41','12:42','12:43']
 
                 if (hoursActive.includes(hour)) {
                     alert("Ya es la hora!")
                     location.href = "https://youtube.com/playlist?list=PLHS1exCIbqtNdjhp1To5Eo3Bp9bmVhnkV";
                 } else {
-                    alert("Aun no es la hora")
+                    alert("Aun no es la hora mmg")
                     location.href = "";
                 }
             }, 2000);
